@@ -183,7 +183,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Mohammad Mofidi - [@instagram_handle](https://www.instagram.com/_mohammadmofidi/) - mohammad.mofidi.k@gmail.com
+Mohammad Mofidi - https://www.instagram.com/_mohammadmofidi/ -- mohammad.mofidi.k@gmail.com
 
 Project Link: [https://github.com/mofidi80/Student_Dataset_Creator](https://github.com/mofidi80/Student_Dataset_Creator)
 
