@@ -1,12 +1,14 @@
 import cv2
 import numpy as np
 import sqlite3
+import os
 
-face_detect = cv2.CascadeClassifier(r"C:\Users\Admin\Documents\Python Projects\Facial Recognition with SQL\haarcascade_frontalface_default.xml")
+file_path = dir_path = os.path.dirname(os.path.realpath(__file__))
+face_detect = cv2.CascadeClassifier(file_path + r"\haarcascade_frontalface_default.xml")
 cam = cv2.VideoCapture(0)   #0 is for the webcam
 
 def insert_or_update(Id, Name, age):    #function for sqlite database
-    conn = sqlite3.connect(r"C:\Users\Admin\Documents\Python Projects\Facial Recognition with SQL\face detection database.db")    #connect to databse
+    conn = sqlite3.connect(file_path + r"\face detection database.db")    #connect to databse
     cmd = "SELECT * FROM STUDENTS WHERE Id=" + str(Id)
     ###
     """to create the table mentioned above use the code below
@@ -51,7 +53,7 @@ while(True):
     cv2.imshow("Face", img)
     cv2.waitKey(1)
 
-    if sample_num > 20: #if dataset >20 : break the loop
+    if sample_num > 1: #if dataset >1 : break the loop
         break
 
 #quit:

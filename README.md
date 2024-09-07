@@ -8,13 +8,14 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
+ 
 <!-- PROJECT LOGO -->
-<br />
+<!-- <br />
 <div align="center">
   <a href="https://github.com/mofidi80/Student_Dataset_Creator">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  </a> 
+  -->
 
 <h3 align="center">Student Dataset Creator</h3>
 
@@ -47,11 +48,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -59,10 +58,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+<!-- 
+[![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Simple python script for creating a sql dataset to store student data along with a webcam picture of said student with coresponding name and id.
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+In the second year of my undergraduate degree one of my professors wanted to get to know the students of the class and asked us to take a selfie and send it to her; I thought it would be difficult to keep the data from all her classes organized so I wrote this script. She seemed to really like it though I don't know if she ended up using it later.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,14 +71,9 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![opencv][opencv]][opencv-url]
+* [![sqlite][sqlite]][sqlite-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,38 +81,30 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
+ 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* Numpy
+* sqlite3 (only in python ver < 2.5)
+* opencv
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/mofidi80/Student_Dataset_Creator.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin mofidi80/Student_Dataset_Creator
-   git remote -v # confirm the changes
-   ```
+1. First you should install the following libraries for python.
+* Numpy
+  ```console
+  pip install numpy
+  ```
+
+* opencv
+  ```console
+pip install opencv-python
+```
+
+2. Download "haarcascade_frontalface_default.xml" from the repository.
+
+3. Create a file named "face detection database.db"
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,23 +113,11 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+As stated above this script is for creating a sql dataset to store student data along with a webcam picture of said student with coresponding name and id.
 
 
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/mofidi80/Student_Dataset_Creator/issues) for a full list of proposed features (and known issues).
+### Possible usage
+This may be used to train a facial detection software for instance with python face_recognition library.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,18 +161,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Mohammad Mofidi - https://www.instagram.com/_mohammadmofidi/ -- mohammad.mofidi.k@gmail.com
 
-Project Link: [https://github.com/mofidi80/Student_Dataset_Creator](https://github.com/mofidi80/Student_Dataset_Creator)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,10 +181,13 @@ Project Link: [https://github.com/mofidi80/Student_Dataset_Creator](https://gith
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/mohammad-mofidi-khajeh-2715832b8/
 [product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
+[opencv]: https://img.shields.io/badge/opencv-brightgreen
+
+[opencv-url]: https://opencv.org/
+[sqlite]: https://img.shields.io/badge/sqlite-blue
+
+
+[sqlite-url]: https://www.sqlite.org/
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
 [Vue-url]: https://vuejs.org/
 [Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
