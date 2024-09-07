@@ -98,8 +98,8 @@ In the second year of my undergraduate degree one of my professors wanted to get
 
 * opencv
   ```console
-pip install opencv-python
-```
+  pip install opencv-python
+  ```
 
 2. Download "haarcascade_frontalface_default.xml" from the repository.
 
