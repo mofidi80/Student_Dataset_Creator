@@ -60,7 +60,7 @@
 <!-- 
 [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Simple python script for creating a sql dataset to store student data along with a webcam picture of said student with coresponding name and id.
+Simple python script for creating a sql dataset to store student data along with a webcam picture of said student with corresponding name and id.
 
 In the second year of my undergraduate degree one of my professors wanted to get to know the students of the class and asked us to take a selfie and send it to her; I thought it would be difficult to keep the data from all her classes organized so I wrote this script. She seemed to really like it though I don't know if she ended up using it later.
 
@@ -112,7 +112,7 @@ In the second year of my undergraduate degree one of my professors wanted to get
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-As stated above this script is for creating a sql dataset to store student data along with a webcam picture of said student with coresponding name and id.
+As stated above this script is for creating a sql dataset to store student data along with a webcam picture of said student with corresponding name and id.
 
 
 ### Possible usage
